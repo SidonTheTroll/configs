@@ -14,6 +14,10 @@
 " --- Just Some Notes ---
 " :PlugClean :PlugInstall :UpdateRemotePlugins
 
+" Run sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' 
+" That is for plugin compatibility 
+
+
 call plug#begin()
 
 Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
