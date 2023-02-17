@@ -9,12 +9,15 @@
 :syntax on
 :set cursorline
 :set clipboard=unnamedplus
+:inoremap <C-Backspace> <C-W>
 
 
 " --- Just Some Notes ---
 " :PlugClean :PlugInstall :UpdateRemotePlugins
 
 " Run sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' 
+" curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 " That is for plugin compatibility 
 
 
@@ -30,6 +33,7 @@ Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 set encoding=UTF-8
 
@@ -54,3 +58,5 @@ nmap <F8> :TagbarToggle<CR>
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
 
+" Enable deoplete
+let g:deoplete#enable_at_startup = 1
