@@ -1,15 +1,16 @@
-:set number 
-:set autoindent
-:set tabstop=4
-:set shiftwidth=4
-:set smarttab
-:set softtabstop=4
-:set mouse=a
-:set wrap
-:syntax on
-:set cursorline
-:set clipboard=unnamedplus
-:inoremap <C-Backspace> <C-W>
+:set number " set line number
+:set relativenumber " set line number relative to the currest line (easy to use vim commands) 
+:set autoindent " use similar 4 spaces in the next line 
+:set tabstop=4 " tab means 4 spaces (used for coding) 
+:set shiftwidth=4 " set width of tab to 4 spaces
+:set smarttab " used for whitespacing 
+:set softtabstop=4 " stops tab after 4 spaces 
+:set mouse=a " use your mouse in nvim 
+:set wrap " wrap the file around the terminal 
+:syntax on " syntax coloring 
+:set cursorline " highlight the current cursor line 
+:set clipboard=unnamedplus " yank to external keyboard 
+:inoremap <C-Backspace> <C-W> "supposed to work but didnt. just remove this if you want
 
 
 " --- Just Some Notes ---
@@ -42,12 +43,12 @@ call plug#end()
 
 
 
-nnoremap <C-f> :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-b> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFocus<CR> " focuses nerdtree 
+nnoremap <C-n> :NERDTree<CR> " unfocus nerdtree 
+nnoremap <C-b> :NERDTreeToggle<CR> " toggle nerdtree on and off 
 
 
-nmap <F8> :TagbarToggle<CR>
+nmap <F8> :TagbarToggle<CR> " F8 enables elements bar 
 
 :set completeopt-=preview " For No Previews
 
