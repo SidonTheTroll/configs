@@ -1,3 +1,7 @@
+" THIS FILE IS FOR NEOVIM ONLY although some of them can be used in vim too
+
+
+
 :set number " set line number
 :set relativenumber " set line number relative to the currest line (easy to use vim commands) 
 :set autoindent " use similar 4 spaces in the next line 
