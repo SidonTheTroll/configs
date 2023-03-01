@@ -58,5 +58,6 @@ alias h='history'
 alias nv='nvim'
 
 
-# meme moment
-neofetch
+# meme moment 
+# And set the ascii location to ~/tools/
+neofetch -- ascii_bold on --ascii tools/ascii.txt --ascii_colors 0 1 2 3 4 5 6 7 8 9 
