@@ -1,0 +1,12 @@
+New packages will be added in future 
+
+Neovim/vim 
+VS Codium 
+ImageMagick 
+Kitty 
+Htop 
+VLC Media Player 
+Audacity 
+Cava 
+Firefox 
+Opera 
