@@ -56,6 +56,7 @@ alias t='tree'
 alias e='exit'
 alias h='history'
 alias nv='nvim'
+alias r='ranger'
 
 
 # meme moment 
