@@ -4,6 +4,7 @@ Clipboard Indicator
 Coverflow Alt-tab 
 Disconnect Wifi 
 GSConnect 
+JustPerfection
 Media Controls 
 Screensnot Directory 
 Unite
