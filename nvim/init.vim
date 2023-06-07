@@ -16,17 +16,13 @@
 
 inoremap <C-Backspace> <C-W>
 
+
 " --- Just Some Notes ---
 " :PlugClean :PlugInstall :UpdateRemotePlugins
 
-" Run sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' 
-" curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-" That is for plugin compatibility 
-
 call plug#begin()
 
-Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
+Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw). Press CTRL+S and the symbol to surround it 
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
 Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
@@ -34,7 +30,7 @@ Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
 Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
-Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
+Plug 'https://github.com/mg979/vim-visual-multi' " CTRL + N for multiple cursors
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Text autocompletion from file 
 
@@ -64,7 +60,3 @@ let g:NERDTreeDirArrowCollapsible="~"
 " Enable deoplete
 let g:deoplete#enable_at_startup = 1
 
-noremap h h
-noremap n j
-noremap e k
-noremap i l
