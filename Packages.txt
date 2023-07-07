@@ -10,3 +10,4 @@ Audacity
 Cava 
 Firefox 
 Opera 
+Obisidian.md
