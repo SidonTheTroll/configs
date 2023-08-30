@@ -33,6 +33,8 @@ Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/mg979/vim-visual-multi' " CTRL + N for multiple cursors
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Text autocompletion from file 
+Plug 'wakatime/vim-wakatime' " Wakatime integration
+
 
 set encoding=UTF-8
 
