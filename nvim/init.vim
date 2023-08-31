@@ -34,7 +34,7 @@ Plug 'https://github.com/mg979/vim-visual-multi' " CTRL + N for multiple cursors
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Text autocompletion from file 
 Plug 'wakatime/vim-wakatime' " Wakatime integration
-
+Plug 'mhinz/vim-startify'
 
 set encoding=UTF-8
 
@@ -61,3 +61,9 @@ let g:NERDTreeDirArrowCollapsible="~"
 
 " Enable deoplete
 let g:deoplete#enable_at_startup = 1
+
+ let g:startify_custom_header =
+       \ startify#pad(split(system('figlet -w 100 Its not Junkover yet!'), '\n'))
+
+" Start NERDTree and put the cursor back in the other window.
+autocmd VimEnter * NERDTree | wincmd p
