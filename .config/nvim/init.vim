@@ -59,6 +59,13 @@ nnoremap <C-v> :ToggleTerm size=80 dir=./ direction=vertical<CR>
 nnoremap <C-z> :set number
 nnoremap <C-x> :set relativenumber
 
+" Airline 
+
+let g:airline_powerline_fonts = 1
+let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v']) 
+:let g:airline_theme='kolor'
+" let g:airline_extensions = ['hunks', 'branch', 'tabline']
+
 " Plugin afterwork 
 
 au BufWritePost * GitGutter
