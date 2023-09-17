@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# PLACE BOTH .txt AND .sh FILES IN ~/GCM/ FOLDER
+
 # Read credentials from the plain text file
 USERNAME=$(grep '^username=' ~/gcm/gcm-config.txt | cut -d '=' -f 2)
 PASSWORD=$(grep '^password=' ~/gcm/gcm-config.txt | cut -d '=' -f 2)
